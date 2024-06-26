@@ -1,0 +1,65 @@
+* {
+    font-family: "Inconsolata", monospace;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    animation: backgroundFlicker 3s infinite;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+input, button {
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid red;
+}
+
+button {
+    background: black;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+@keyframes backgroundFlicker {
+    0%, 100% { background-color: black; }
+    50% { background-color: #0c0909; }
+}
